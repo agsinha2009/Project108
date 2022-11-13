@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+    <title>Project 107</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+    <div class="col-xs-12">
+        <h2>Sound Identification</h2>
+        <h4>Can identificate the sounds of :</h4>
+        <span id="heading"><label>O,        </label>&nbsp;&nbsp;<label>B,        </label>&nbsp;&nbsp;<label>S,            </label>&nbsp;&nbsp;<label>L</label></span>
+    </div>
+    <br>
+
+    <div style="background-color:lightslategray;">
+       <button onclick="start()" class="btn btn-primary">Start</button>>
+    </div>
+
+
+    <span>
+        <h4>Detected Background Noise - </h4><h4 id="counter_bgn"></h4>
+
+    &nbsp;&nbsp;&nbsp;
+        <h4>Detected letter "O" - </h4><h4 id="counter_o"></h4>
+
+    &nbsp;&nbsp;&nbsp;
+        <h4>Detected letter "B" - </h4><h4 id="counter_b"></h4>
+    
+
+    &nbsp;&nbsp;&nbsp;
+         <h4>Detected letter "S" -  </h4><h4 id="counter_s"></h4>
+    </span>
+        
+
+    &nbsp;&nbsp;&nbsp;
+         <h4>Detected letter "L" -  </h4><h4 id="counter_l"></h4>
+    </span>
+
+
+    <div>
+        <span><h3 class="text-danger" id="1">Detected voice is of -</h3><h3 id="detected_voice" class="text-damger"></h3></span>
+        <br><br>
+
+        <img src="ear.jpg" height="200" width="200" id="img">
+    </div>
+
+    <div class="copy_right_footer"></div>
+</div>
+</body>
+</html>
